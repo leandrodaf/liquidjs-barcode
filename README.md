@@ -7,9 +7,7 @@ Below the scenes, the plugin uses the [bwip-js](https://github.com/metafloor/bwi
 # Usage
 
 ```shel
-
 npm i liquidjs-barcode
-
 ```
 
 ```javascript
