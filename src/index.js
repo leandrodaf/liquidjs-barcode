@@ -1,7 +1,7 @@
 const bwipjs = require("bwip-js");
 
 module.exports = () => {
-  return function(Liquid) {
+  return function() {
     this.registerFilter("barcode", async (text = "bar-code", args) => {
       let configs = {};
 
