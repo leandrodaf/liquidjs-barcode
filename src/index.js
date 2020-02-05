@@ -1,7 +1,7 @@
-const generateBarCode = require("./barcode");
+const bwipjs = require("bwip-js");
 
 module.exports = () => {
-  return () => {
+  return function(Liquid) {
     this.registerFilter("barcode", async (text = "bar-code", args) => {
       let configs = {};
 
@@ -20,3 +20,11 @@ module.exports = () => {
     });
   };
 };
+
+const generateBarCode = async config =>
+  new Promise((resolve, reject) => {
+    bwipjs.toBuffer(config, (error, png) => {
+      if (error) return reject(error);
+      return resolve("data:image/png;base64," + png.toString("base64"));
+    });
+  });
