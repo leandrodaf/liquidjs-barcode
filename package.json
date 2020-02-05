@@ -1,0 +1,28 @@
+{
+  "name": "liquidjs-barcode",
+  "version": "1.0.0",
+  "description": "This plugin adds barcode creation functionality",
+  "main": "./lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "./node_modules/.bin/babel src --out-dir lib"
+  },
+  "author": "Leandro Ferreira <leandro.daf4@gmail.com> (https://github.com/leandrodaf)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chaordic/oms-entity-log-client-node.git"
+  },
+  "files": [
+    "lib"
+  ],
+  "dependencies": {
+    "bwip-js": "^2.0.6"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "eslint": "^6.8.0"
+  }
+}
