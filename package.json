@@ -1,6 +1,6 @@
 {
   "name": "liquidjs-barcode",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This plugin adds barcode creation functionality",
   "main": "./lib/index.js",
   "scripts": {
