@@ -8,7 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "./node_modules/.bin/eslint src --fix ",
     "build": "./node_modules/.bin/babel src --out-dir lib",
-    "prepublish": "npm run clean && npm run lint && npm run build"
+    "prepublish": "yarn run clean && yarn run lint && yarn run build"
   },
   "author": "Leandro Ferreira <leandro.daf4@gmail.com> (https://github.com/leandrodaf)",
   "license": "MIT",
@@ -20,13 +20,13 @@
     "lib"
   ],
   "dependencies": {
-    "bwip-js": "^2.0.6"
+    "bwip-js": "^2.0.10"
   },
   "devDependencies": {
-    "@babel/cli": "^7.8.4",
-    "@babel/core": "^7.8.4",
-    "@babel/preset-env": "^7.8.4",
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.11.1",
+    "@babel/preset-env": "^7.11.0",
     "eslint": "^6.8.0",
-    "rimraf": "^3.0.1"
+    "rimraf": "^3.0.2"
   }
 }
